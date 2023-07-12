@@ -12,9 +12,13 @@ const scene = new THREE.Scene()
  */
 const material = new THREE.MeshBasicMaterial({
 	color: 'green',
+	wireframe: true,
 })
 
 const geometry = new THREE.BoxGeometry(1, 1, 1)
+
+console.log(geometry)
+
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
